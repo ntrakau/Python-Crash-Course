@@ -1,0 +1,1 @@
+every = ['euro','dollar', 'rand', 'yen', 'shilling', 'pound', 'naira', 'ruby', 'pula']
