@@ -3,7 +3,7 @@
 #Create a list and print it out
 animals = ['cats','lions', 'leopards', 'weird']
 for animal in animals:
-    print(animal )
+    print(animal)
 print(animals[0] +" would make a great pet")
 print(animals[1] +" will eat you")
 print(animals[2] +" this one are very fast!!!")

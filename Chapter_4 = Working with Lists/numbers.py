@@ -5,4 +5,4 @@ for value in range(1,5):#range()function counts from the first arg to and not th
     print(value)
 
 numbers = list(range(1,7))
-print(numbers)
+print(numbers)#outputs 1-6 
