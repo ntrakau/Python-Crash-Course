@@ -1,7 +1,7 @@
 #NT Rakau
 
 my_foods = ['pizza', 'falafel', 'carrot cake']
-friends_foods = my_foods[1:]
+friends_foods = my_foods[:]
 
 my_foods.append('kota')
 friends_foods.append("meat")
