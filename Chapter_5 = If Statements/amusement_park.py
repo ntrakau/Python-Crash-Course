@@ -2,7 +2,7 @@
 
 #if-elif-else chain
 '''
- Python executes only one 
+Python executes only one 
 block in an if-elif-else chain. It runs each conditional test in order until 
 one passes. When a test passes, the code following that test is executed and 
 Python skips the rest of the tests
@@ -16,13 +16,15 @@ elif age < 18:
 else:
     print("Your admission cost is $10.")
 
-age = 12
+age = 50
 
 if age < 4:
     price = 0
 elif age < 18:
     price = 5
-else:
+elif age < 65:
     price = 10
+elif age >= 65:
+    price = 5
 
 print("Your admission cost is $" + str(price) + ".")
