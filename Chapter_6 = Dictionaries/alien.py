@@ -33,6 +33,12 @@ Martell['Age'] = 32
 print("His name is " + Martell['Name'] + " and he works as a " + Martell['Occupation'] + " he is " + str(Martell['Age']) + " years old, very very handsome!!!") #printed out a text using dict
 print(Martell)
 
+#Removing Key-Values Pairs
+#Be aware that the deleted key-value pair is removed permanently.
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0)
 
+del alien_0['points']#del requires name of dict and key 
+print(alien_0)
 
 
