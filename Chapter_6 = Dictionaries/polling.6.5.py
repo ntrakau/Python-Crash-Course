@@ -12,4 +12,4 @@ for person in people:
     if person not in favorite_language.keys():
         print(person.title() + ", please take the poll!".title())
 for name in favorite_language.keys():
-    print(name.title() + " thank you for your participation!".title())
+    print(name.title() + ", thank you for your participation!".title())
