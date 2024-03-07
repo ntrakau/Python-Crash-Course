@@ -9,7 +9,7 @@ favorite_languages = {
 print("Sarah's favorite language is " + favorite_languages['sarah'].title() + ".")#favorite_languages['sarah'] calls the value to print 
 
 #looping through a dict
-for name, language in favorite_languages.items():
+name, languagfor e in favorite_languages.items():
     print(name.title() + "'s favorite language is " + language.title() + ".")
 
 #using the key() method to print out only the keys from the dict.
