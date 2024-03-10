@@ -23,3 +23,6 @@ print("if loop" + ifstatements_glossary['if loop'].title())
 for glossary, meaning in ifstatements_glossary.items():
     print('\n' + glossary.title())
     print(meaning.title())
+
+for key, value in ifstatements_glossary.items():
+    print(f"{key.title()}: {value}")

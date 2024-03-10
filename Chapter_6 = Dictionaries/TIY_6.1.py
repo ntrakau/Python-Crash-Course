@@ -1,5 +1,4 @@
 #NT Rakau
-
 '''
 6-1. Person: Use a dictionary to store information about a person you know.
 Store their first name, last name, age, and the city in which they live. You 
@@ -26,7 +25,7 @@ favorite_numbers = {
     'paul':2,
     'sarah': 1,
 }
-
+print(f"John's favorite number is {favorite_numbers['john']}.")
 print(favorite_numbers['jane'])
 print(favorite_numbers['john'])
 print(favorite_numbers['paul'])

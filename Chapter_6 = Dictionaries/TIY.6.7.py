@@ -66,24 +66,72 @@ to name a few of their favorite places. Loop through the dictionary, and print
 each person’s name and their favorite places
 '''
 favorite_places = {
-    'grizzly' :{  
-             'location_1':'dubai',  'cape town','new york'}, 
-           
-       'katixi' : {
-         'location_1' : 'dubai', 
-          'location_1' : 'cape town', 
-          'location_1' : 'new york',
-    },
-    'lesiba' :{ 
-          'location_1':'dubai', 
-          'location_1'  :'cape town', 
-          'location_1': 'new york',
-    }, 
+    'grizzly' : ['dubai', 'new york', 'spain'],
+    'katixi' : ['brazil', 'china', 'mauritaus'],
+    'lesiba' : ['cape town', 'afghanistan', 'cuba'],
 }
 
-for names, place in favorite_places.items():
-    location = place['location_1']
-    print("\nHi, my name is " + names.title() + " and my favorite places are: \t")
-    print("\t" + location)
-
+for name,places in favorite_places.items():
+    print(f"Hi, my name is {name.title()}. And my favorite places are:")
+    for value in places:
+        print(f"\t{value.title()}")
   
+'''
+6-10. Favorite Numbers: Modify your program from Exercise 6-2 (page 102) so 
+each person can have more than one favorite number. Then print each person’s 
+name along with their favorite numbers
+'''
+favorite_numbers = {
+    'john': [5,6,7],
+    'jane': [4,3,2],
+    'smith': [3,76],
+    'paul':[2,9],
+    'sarah': [1,2,3],
+}
+
+for name,value in favorite_numbers.items():
+    print(f"Hi, my name is {name.title()}, and my lucky numbers are: ")
+    for values in value:
+        print(f"\t{values}")
+
+'''
+6-11. Cities: Make a dictionary called cities. Use the names of three cities as 
+keys in your dictionary. Create a dictionary of information about each city and 
+include the country that the city is in, its approximate population, and one fact 
+about that city. The keys for each city’s dictionary should be something like 
+country, population, and fact. Print the name of each city and all of the information you have stored about it
+'''
+cities = {
+    'polokwane' : {
+        'country': 'south africa',
+        'population': 493951,
+        'fact': 'polokwane means place of safety',
+        },
+
+    'tokyo' : {
+        'country': 'japan',
+        'population': 14000000,
+        'fact': 'worlds largest city',
+        },
+    
+    'new york' : {
+        'country': 'united states',
+        'population': 8500000,
+        'fact': 'new York is often called the big city',
+        },
+
+    }
+for k, v in cities.items():
+    print(f"Country: {k.title()}")
+
+    about_country = v['population']
+    fact = v['fact']
+
+    print(f"\tPopulation: {str(about_country)}")
+    print(f"\tFact: {fact.title()}")
+
+'''
+6-12. Extensions: We’re now working with examples that are complex enough 
+that they can be extended in any number of ways. Use one of the example programs from this chapter, and extend it by adding new keys and values, changing the context of the program or improving the formatting of the output.
+'''
+
