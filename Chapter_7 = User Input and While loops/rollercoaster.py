@@ -1,8 +1,4 @@
-#NT Rakau
-
-height = input("How tall are you, in inches? ")
-height = int(height)
-
+height = int(input("How tall are you, in inches? "))
 if height >= 36:
     print("\nYou're tall enough to ride!")
 else:
